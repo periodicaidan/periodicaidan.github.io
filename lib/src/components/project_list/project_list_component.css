@@ -52,6 +52,16 @@
   font-display: swap;
   src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcU.ttf) format('truetype');
 }
+@media screen and (min-width: 800px) {
+  .hide-on-mobile {
+    display: hidden;
+  }
+}
+@media screen and (max-width: 799px) {
+  .hide-on-desktop {
+    display: hidden;
+  }
+}
 #parent {
   margin-top: -20px;
   margin-bottom: 30px;

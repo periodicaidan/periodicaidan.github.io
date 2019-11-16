@@ -3,7 +3,7 @@
 @heroHeight: 700px;
 
 code {
-    font-family: @codeFont;
+    font-family: @codeFont !important;
 }
 
 #hero {
@@ -15,4 +15,11 @@ code {
 .ui.text {
     margin-top: @heroHeight / 2 - 100;
 }
+
+nav {
+    font-family: @codeFont !important;
+}
+
+@import "../../../../web/size-handling.less";
+
 

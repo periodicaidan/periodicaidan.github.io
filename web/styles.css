@@ -52,7 +52,7 @@
   font-display: swap;
   src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcU.ttf) format('truetype');
 }
-body {
+:host body {
   font-family: Palatino, "Libre Baskerville", serif !important;
   font-size: 24px !important;
   margin: 0 auto;

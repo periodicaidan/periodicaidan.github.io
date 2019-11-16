@@ -15,10 +15,12 @@
                 </h2>
                 <a [href]="project.codeUrl"
                     target="_blank"
-                    class="ui basic black labeled icon button"
+                    class="ui labeled icon button"
+                    [class.green]="project.hasDemo"
+                    [class.disabled]="!project.hasDemo"
                     role="button">
-                    <i class="github icon"></i>
-                    Code
+                    <i class="play icon"></i>
+                    Demo
                 </a>
                 <hr class="ui hidden divider">
                 <p>
