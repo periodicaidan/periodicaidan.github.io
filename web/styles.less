@@ -1,11 +1,11 @@
-@import "../lib/semantic/semantic.less";
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 @import url("https://code.cdn.mozilla.net/fonts/fira.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
 @headerFont: "Roboto Slab";
-@bodyFont: Palatino, serif;
+@bodyFont: Palatino, "Libre Baskerville", serif;
 @codeFont: "Fira Code", "Fira Mono", Monaco, monospace;
 
 @footerHeight: 200em;
@@ -18,6 +18,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: @headerFont !important;
+}
+
+button, 
+[role*=button] {
+    font-family: @codeFont !important;
 }
 
 

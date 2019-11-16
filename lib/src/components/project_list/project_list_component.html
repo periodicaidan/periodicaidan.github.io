@@ -1,0 +1,25 @@
+<div class="ui segment" id="parent">
+    <div class="ui segment" *ngFor="let project of projects">
+        <div class="ui divided grid">
+            <div class="four wide column">
+
+            </div>
+            <div class="twelve wide wide column">
+                <h2 class="ui dividing header">
+                    {{ project.name }}
+                </h2>
+                <a [href]="project.codeUrl"
+                    target="_blank"
+                    class="ui basic black labeled icon button"
+                    role="button">
+                    <i class="github icon"></i>
+                    Code
+                </a>
+                <hr class="ui hidden divider">
+                <p>
+                    {{ project.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
