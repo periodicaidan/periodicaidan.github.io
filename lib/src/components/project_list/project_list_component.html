@@ -1,5 +1,10 @@
 <div class="ui segment" id="parent">
-    <div class="ui segment" *ngFor="let project of projects">
+    <div 
+        class="ui segment project-card" 
+        *ngFor="let project of projects"
+        (mouseenter)="onMouseEnter($event)"
+        (mouseleave)="onMouseLeave($event)"
+    >
         <div class="ui divided grid">
             <div class="four wide column">
 

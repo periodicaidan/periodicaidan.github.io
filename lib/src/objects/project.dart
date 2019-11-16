@@ -8,7 +8,9 @@ class Project {
   final Uri codeUrl;
   final Uri demoUrl;
 
-  Project(this.name, this.description, this.imageUrl, this.codeUrl, this.demoUrl);
+  bool get hasDemo => demoUrl.toString().isNotEmpty;
+
+  const Project(this.name, this.description, this.imageUrl, this.codeUrl, this.demoUrl);
 
   static Future<Project> github(
     String repoName, 

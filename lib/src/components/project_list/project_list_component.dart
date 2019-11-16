@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import "package:angular/angular.dart";
 import 'package:periodicaidan/src/objects/project.dart';
 
@@ -32,5 +34,15 @@ class ProjectListComponent {
       Project.github(project["repo"], name: project["name"])
         .then((proj) => this.projects.add(proj));
     }
+  }
+
+  void onMouseEnter(Event event) {
+    var target = event.target as HtmlElement;
+    target.classes.add("raised");
+  }
+
+  void onMouseLeave(Event event) {
+    var target = event.target as HtmlElement;
+    target.classes.remove("raised");
   }
 }
