@@ -1,0 +1,18 @@
+@import "../../../../web/styles.less";
+@import "../../../constants.less";
+
+@heroHeight: 700px;
+
+code {
+    font-family: @codeFont;
+}
+
+#hero {
+    height: @heroHeight;
+    background: linear-gradient(fadeout(@black, 70%), fadeout(@black, 20%)),url('@{assetsFolder}/vaporwaveshit.jpg') no-repeat fixed center top;
+    background-size: cover;
+}
+
+.ui.text {
+    margin-top: @heroHeight / 2 - 100;
+}
