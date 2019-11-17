@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["periodicaidan|web/main.dart","angular|lib/angular.template.dart","periodicaidan|lib/app_component.template.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
