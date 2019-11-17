@@ -1,0 +1,15 @@
+@import "../../../constants.less";
+
+@buttonColor: @orange;
+
+.blue.buttons > .ui.button {
+    background-color: @buttonColor !important;
+
+    &:hover {
+        background-color: darken(@buttonColor, 10%) !important;
+    }
+
+    &:active {
+        background-color: darken(@buttonColor, 15%) !important;
+    }
+}

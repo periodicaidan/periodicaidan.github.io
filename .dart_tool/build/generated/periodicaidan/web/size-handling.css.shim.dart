@@ -1,0 +1,1 @@
+final List<dynamic> styles = ['@media screen AND (min-width:800px){.hide-on-mobile._ngcontent-%ID%{display:none!important}}@media screen AND (max-width:799px){.hide-on-desktop._ngcontent-%ID%{display:none!important}}'];
