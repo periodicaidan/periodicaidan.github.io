@@ -8,10 +8,12 @@ class Project {
   final String imageUrl;
   final String codeUrl;
   final String demoUrl;
+  final String language;
+  final String color;
 
   bool get hasDemo => demoUrl.isNotEmpty;
 
-  const Project(this.name, this.description, this.imageUrl, this.codeUrl, this.demoUrl);
+  const Project(this.name, this.description, this.imageUrl, this.codeUrl, this.demoUrl, this.language, this.color);
 
   static Future<Project> github(
     String repoName, 
@@ -26,11 +28,23 @@ class Project {
     
     name = name ?? repoName;
     String description = repo["description"];
+    String language = repo["language"];
 
-    return Project(name, description, imageUrl, codeUrl, demoUrl);
+    return Project(name, description, imageUrl, codeUrl, demoUrl, language, languageColor[language] ?? "");
   }
 
   void openSourceCodeInNewTab() {
     window.open(codeUrl, "_blank");
   }
 }
+
+const Map<String, String> languageColor = {
+  "Rust": "orange",
+  "Dart": "teal",
+  "Python": "blue",
+  "Julia": "violet",
+  "C": "grey",
+  "C#": "green",
+  "CSS": "purple",
+  "JavaScript": "yellow",
+};

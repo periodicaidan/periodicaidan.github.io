@@ -7,7 +7,7 @@
         </div>
     </div>
     <div 
-        class="ui segment project-card" 
+        class="ui {{ project.color }} segment project-card"
         *ngFor="let project of projects"
         (mouseenter)="onMouseEnter($event)"
         (mouseleave)="onMouseLeave($event)"
@@ -20,13 +20,16 @@
             <div class="twelve wide wide column">
                 <h2 class="ui dividing header">
                     {{ project.name }}
+                    <div class="sub header">{{ project.language }}</div>
                 </h2>
-                <a [href]="project.codeUrl"
+                <a 
+                    [href]="project.codeUrl"
                     target="_blank"
                     class="ui labeled icon button"
                     [class.green]="project.hasDemo"
                     [class.disabled]="!project.hasDemo"
-                    role="button">
+                    role="button"
+                >
                     <i class="play icon"></i>
                     Demo
                 </a>

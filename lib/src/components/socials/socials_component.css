@@ -53,11 +53,11 @@
   src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcU.ttf) format('truetype');
 }
 .blue.buttons > .ui.button {
-  background-color: #FD632F !important;
+  background-color: #fd7648 !important;
 }
 .blue.buttons > .ui.button:hover {
-  background-color: #f74002 !important;
+  background-color: #fd632f !important;
 }
 .blue.buttons > .ui.button:active {
-  background-color: #dd3902 !important;
+  background-color: #fd5820 !important;
 }

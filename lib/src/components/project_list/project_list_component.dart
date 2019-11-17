@@ -15,33 +15,36 @@ import 'package:periodicaidan/src/objects/project.dart';
   ],
 )
 class ProjectListComponent {
-  List<Project> projects = [];
+  List<Project> projects;
 
   ProjectListComponent() {
     var projects = [
       {
-        "repo": "dart_tdlib",
-        "name": "TDLib for Dart",
+        "repo": "selfishserver",
+        "name": "Selfish Server",
       },
       {
         "repo": "meme",
         "name": "Mobile Enigma Machine Emulator (MEME)",
       },
       {
-        "repo": "selfishserver",
-        "name": "Selfish Server",
+        "repo": "dart_tdlib",
+        "name": "TDLib for Dart",
       },
       {
         "repo": "reify",
         "name": "Reify"
-      }
+      },
     ];
+    this.projects = List(projects.length);
 
-    for (var project in projects) {
+
+    for (int i = 0; i < projects.length; i++) {
+      var project = projects[i];
       Project.github(project["repo"], name: project["name"])
         .then((proj) {
-          this.projects.add(proj);
-          // Ensure the stuck content knows the project list has grown
+          this.projects[i] = proj;
+          // Ensure the sticky content knows the project list has grown
           Semantic.refreshSticky();
         });
     }
