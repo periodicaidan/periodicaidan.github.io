@@ -52,12 +52,12 @@
   font-display: swap;
   src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcU.ttf) format('truetype');
 }
-.blue.buttons > .ui.button {
+.orange.menu > .item {
   background-color: #fd7648 !important;
 }
-.blue.buttons > .ui.button:hover {
+.orange.menu > .item:hover {
   background-color: #fd632f !important;
 }
-.blue.buttons > .ui.button:active {
+.orange.menu > .item:active {
   background-color: #fd5820 !important;
 }
