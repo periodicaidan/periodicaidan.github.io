@@ -6,5 +6,8 @@ import "package:angular/angular.dart";
   styleUrls: ["footer_component.css"],
 )
 class FooterComponent {
-  
+  int currentYear() {
+    var today = DateTime.now();
+    return today.year;
+  }
 }

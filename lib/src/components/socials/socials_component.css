@@ -52,17 +52,12 @@
   font-display: swap;
   src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcU.ttf) format('truetype');
 }
-:host {
-  width: 100%;
+.blue.buttons > .ui.button {
+  background-color: #FD632F !important;
 }
-:host #copyright {
-  font-family: Palatino, "Libre Baskerville", serif !important;
-  line-height: 1.4em;
-  text-align: center;
-  font-size: 1.5em;
-  margin-top: 85px;
+.blue.buttons > .ui.button:hover {
+  background-color: #f74002 !important;
 }
-:host footer {
-  background-color: #16112C !important;
-  height: 250px;
+.blue.buttons > .ui.button:active {
+  background-color: #dd3902 !important;
 }

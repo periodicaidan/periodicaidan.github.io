@@ -1,0 +1,6 @@
+<div class="ui fluid blue vertical labeled icon buttons">
+    <a class="ui button" *ngFor="let social of socials" [href]="social.link">
+        <i class="icon {{ social.icon }}"></i>
+        {{ social.name }}
+    </a>
+</div>

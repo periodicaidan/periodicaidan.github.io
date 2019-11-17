@@ -54,15 +54,19 @@
 }
 @media screen and (min-width: 800px) {
   .hide-on-mobile {
-    display: hidden;
+    display: none !important;
   }
 }
 @media screen and (max-width: 799px) {
   .hide-on-desktop {
-    display: hidden;
+    display: none !important;
   }
 }
 #parent {
-  margin-top: -20px;
-  margin-bottom: 30px;
+  margin: -20px auto 30px;
+  width: 900px;
+}
+#socials {
+  width: 200px;
+  margin-left: 100px;
 }

@@ -1,9 +1,17 @@
 <div class="ui segment" id="parent">
+    <div class="ui left rail">
+        <div class="ui sticky">
+            <div class="ui segment" id="socials">
+                <socials></socials>
+            </div>
+        </div>
+    </div>
     <div 
         class="ui segment project-card" 
         *ngFor="let project of projects"
         (mouseenter)="onMouseEnter($event)"
         (mouseleave)="onMouseLeave($event)"
+        (click)="project.openSourceCodeInNewTab()"
     >
         <div class="ui divided grid">
             <div class="four wide column">

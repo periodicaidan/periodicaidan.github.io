@@ -1,6 +1,8 @@
 import 'dart:html';
 
 import "package:angular/angular.dart";
+import 'package:periodicaidan/src/components/socials/socials_component.dart';
+import 'package:periodicaidan/src/objects/external.dart';
 import 'package:periodicaidan/src/objects/project.dart';
 
 @Component(
@@ -9,7 +11,8 @@ import 'package:periodicaidan/src/objects/project.dart';
   styleUrls: ["project_list_component.css"],
   directives: [
     coreDirectives,
-  ]
+    SocialsComponent,
+  ],
 )
 class ProjectListComponent {
   List<Project> projects = [];
@@ -28,11 +31,19 @@ class ProjectListComponent {
         "repo": "selfishserver",
         "name": "Selfish Server",
       },
+      {
+        "repo": "reify",
+        "name": "Reify"
+      }
     ];
 
     for (var project in projects) {
       Project.github(project["repo"], name: project["name"])
-        .then((proj) => this.projects.add(proj));
+        .then((proj) {
+          this.projects.add(proj);
+          // Ensure the stuck content knows the project list has grown
+          Semantic.refreshSticky();
+        });
     }
   }
 
