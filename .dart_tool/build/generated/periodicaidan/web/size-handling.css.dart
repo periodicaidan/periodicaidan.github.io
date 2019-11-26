@@ -1,1 +1,0 @@
-final List<dynamic> styles = ['@media screen and (min-width: 800px) {\n  .hide-on-mobile {\n    display: none !important;\n  }\n}\n@media screen and (max-width: 799px) {\n  .hide-on-desktop {\n    display: none !important;\n  }\n}\n'];
