@@ -405,9 +405,9 @@
     },
     {
       "name": "sass",
-      "rootUri": "file:///home/periodicaidan/.pub-cache/hosted/pub.dartlang.org/sass-1.23.3",
+      "rootUri": "file:///home/periodicaidan/.pub-cache/hosted/pub.dartlang.org/sass-1.23.6",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.6"
     },
     {
       "name": "sass_builder",
@@ -566,7 +566,7 @@
       "languageVersion": "2.5"
     }
   ],
-  "generated": "2019-11-17T00:36:32.330241Z",
+  "generated": "2019-11-17T06:11:29.832004Z",
   "generator": "pub",
   "generatorVersion": "2.7.0-dev.0.0"
 }

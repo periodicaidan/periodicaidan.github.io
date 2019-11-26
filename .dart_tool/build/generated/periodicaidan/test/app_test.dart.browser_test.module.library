@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["test|lib/bootstrap/browser.dart","periodicaidan|test/app_test.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
