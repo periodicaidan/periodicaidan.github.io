@@ -20,6 +20,10 @@ class ProjectListComponent {
   ProjectListComponent() {
     var projects = [
       {
+        "repo": "dart_tdlib",
+        "name": "TDLib for Dart",
+      },
+      {
         "repo": "selfishserver",
         "name": "Selfish Server",
       },
@@ -28,8 +32,8 @@ class ProjectListComponent {
         "name": "Mobile Enigma Machine Emulator (MEME)",
       },
       {
-        "repo": "dart_tdlib",
-        "name": "TDLib for Dart",
+        "repo": "keykey",
+        "name": "KeyKey"
       },
       {
         "repo": "reify",
@@ -37,7 +41,6 @@ class ProjectListComponent {
       },
     ];
     this.projects = List(projects.length);
-
 
     for (int i = 0; i < projects.length; i++) {
       var project = projects[i];

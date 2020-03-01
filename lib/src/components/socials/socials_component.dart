@@ -16,6 +16,7 @@ class SocialsComponent implements OnInit {
   final List<Social> socials = [
     github,
     email,
+    linkedin,
     twitter,
   ];
 
